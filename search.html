@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوتيوبيا - نتائج البحث</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="mt-5 rtl">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div id="top-menu">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
+          <i class="fa-solid fa-bars fa-lg text-white" id="toggler"></i>
+          <b>    
+              <a class="navbar-brand " href="index.html">
+                  يوتيوبيا
+                  <span class="website-logo p-1"><i class="fas fa-play-circle"></i></span>
+              </a>
+            </b>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto">
+                  <li class="nav-item">
+                      <a class="nav-link px-3 ml-1 mr-3" href="index.html">الصفحه الرئيسية</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3 ml-1 mr-3" href="#">المرفوعة حديثًا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 mr-3" href="#">الفديوهات الرائجة</a>
+                  </li>
+              </ul>
+              <!-- البحث-->
+              <div class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search">
+                  <button onclick="location.href='search.html';" class="btn btn-outline-light my-2 my-sm-0 mr-3" type="submit">ابحث</button>
+              </div>
+          </div>
+          <i class="fa fa-search mr-4 search-icon" ></i>
+          <a href="#" class="nav-link login btn btn-outline-light d-inline-block" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+      </nav>
+       <input type="search" class="form-control search-input" placeholder="ابحث هنا......">
+      
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                      <button type="button" class="close" data-dismiss="modal">
+                          <span>&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                            <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+                            <input type="email" class="form-control" id="email">
+                          </div>
+                          <div class="form-group">
+                              <label for="password" class="col-form-label">كلمة المرور:</label>
+                              <input type="password" class="form-control" id="password">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="#">نسيت كلمة المرور</a>
+                      <a href="#" class="mx-auto">إنشاء حساب</a>
+                      <button type="button" class="btn btn-primary">دخول</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- القائمة الجانبية-->
+      <div class="row pt-1">
+        <div id="wrap">
+          <div class="sidebar">
+            <ul class="list-group list-group-flush p-4">
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-home mr-2 mouse-on"></i>الصفحة الرئيسية
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-fire mr-2 mouse-on"></i>الفديوهات الرائجة
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-circle-play mr-2 mouse-on"></i>فديوهاتي
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-certificate mr-2 mouse-on"></i>سجل المشاهدة
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-share-from-square mr-2 mouse-on"></i>الاشتراكات
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-film mr-2 mouse-on"></i>الافلام والعروض
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-gamepad mr-2 mouse-on"></i>العاب الفديو
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-shirt mr-2 mouse-on"></i>الموضة والجمال
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-atom mr-2 mouse-on"></i>محتوى تعليمي
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-gear mr-2 mouse-on"></i>الاعدادات
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-circle-question mr-2 mouse-on"></i>مساعدة
+              </a>
+              <a href=""></a>
+              مطور بواسطة ماريو سعد<br>
+              &copy;2024
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        </div>
+      </div>
+
+          <div class="search-header">
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-6">
+     <h5 class="serach-results-number px-2 py-2">1055 نتيجة</h5>
+    </div>
+
+   <div class="col-6">
+     <h5 class="float-left filters-icon py-2 px-2" id="search-filters-icon"><i class="fa-solid fa-filter mr-1"></i>تصفية ما تريد</h5>
+   </div>
+ </div>
+
+     <!-- العمود الاول في التصفيه-->
+ <div class="row mt-4">
+  <div class="col-md-6 col-lg-3 filter-column">
+    <div class="text-center">تاريخ التحميل</div>
+    <hr>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName">
+      <span>آخر ساعة</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName">
+      <span>اليوم</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName">
+      <span>هذا الاسبوع</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName">
+      <span>هذا الشهر</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName">
+      <span>هذا العام</span>
+    </label>
+  </div>
+
+
+    <!-- العمود الثاني في التصفيه-->
+  <div class="col-md-6 col-lg-3 filter-column">
+    <div class="text-center">النوع
+    </div>
+    <hr>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName2">
+      <span>فديو</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName2">
+      <span>قناة</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName2">
+      <span>قائمة تشغيل</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName2">
+      <span>فيلم</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName2">
+      <span>عرض</span>
+    </label>
+  </div>
+
+
+ <!-- العمود الثالث في التصفيه-->
+  <div class="col-md-6 col-lg-3 filter-column"> 
+    <div class="text-center">التصنيف بحسب</div>
+    <hr>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName3">
+      <span>مدى الصله</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName3">
+      <span>تاريخ التحميل</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName3">
+      <span>عدد المشاهدات</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName3">
+      <span>التقييم</span>
+    </label>
+  </div>
+
+  <!-- العمود الرابع في التصفيه-->
+  <div class="col-md-6 col-lg-3 filter-column">
+    <div class="text-center">المدة</div>
+    <hr>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName4">
+      <span>قصير (اقل من 5 دقائق )</span>
+    </label>
+    <label class="d-block mb-3">
+      <input type="checkbox" name="CheckBoxInputName4">
+      <span>طويل (اكثر من 20 دقيقة)</span>
+    </label>
+  </div>
+
+</div>
+ </div>
+</div>
+
+          <!-- نتائج البحث-->
+          <!--الفديو الاول-->
+<div class="container">
+<div class="row">
+  <div class="col-12 my-3">
+      <div class="card">
+          <div class="card-horizontal d-md-flex d-block">
+              <div class="card-icons">
+                  <a href="watch.html">
+                      <img class="img-square-wrapper search-image-size" src="search-images/1.jpg" height="170" alt="Card image cap">
+                      <div>
+                        <time>11:00</time>
+                        <i class="fas fa-play fa-2x"></i>
+                      </div>
+                  </a>
+              </div>
+              <div class="card-body p-2 bg-primary text-white">
+                  <a href="watch.html"><h4 class="bg-primary text-white">دليلك الشامل عن الحياة في روسيا  </h4></a>
+                  <p class="card-text">بعض الناس تريد الذهاب الى روسيا سواء للدراسه او العمل او الاستقرار هناك لكنهم لا يعرفون اي شئ عن مميزات وعيوب العيش في روسيا ونحن نقدم لك كل ما تريد في هذا الفديو</p>
+                  <small class="text-muted">
+                  <i class="fas fa-film bg-primary text-white"></i> <span class="bg-primary text-white">1 مليون مشاهدة</span>
+                  <i class="fas fa-clock bg-primary text-white"></i> <span class="bg-primary text-white">قبل 9 أشهر</span>
+                  </small>
+                  <a href="channel.html" class="channel-img">
+                  <img src="search-images/channel logo/1.jpg" alt="" width="30" class="rounded-circle ml-3 bg-primary text-white">
+                  <span class="card-text bg-primary text-white">هجرة شرعية </span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+          <!--الفديو الثاني-->
+            <div class="row">
+              <div class="col-12 my-3">
+                  <div class="card">
+                      <div class="card-horizontal d-md-flex d-block">
+                          <div class="card-icons">
+                              <a href="watch.html">
+                                  <img class="img-square-wrapper search-image-size" src="search-images/2.jpg" height="170" alt="Card image cap">
+                                  <div>
+                                  <time>11:00</time>
+                                  <i class="fas fa-play fa-2x"></i>
+                                </div>
+                              </a>
+                          </div>
+                          <div class="card-body p-2 bg-primary text-white">
+                              <a href="watch.html"><h4 class="bg-primary text-white">مميزات الحياه بأمريكا  </h4></a>
+                              <p class="card-text">اذا كنت تريد السفر للولايات المتحده الامريكية ( امريكا ) عليك ان تشاهد هذا الفديو لتعرف كل شئ عن الحياه هناك</p>
+                              <small class="text-muted">
+                              <i class="fas fa-film bg-primary text-white"></i> <span class="bg-primary text-white">9 مليون مشاهدة</span>
+                              <i class="fas fa-clock bg-primary text-white"></i> <span class="bg-primary text-white">قبل سنتين</span>
+                              </small>
+                              <a href="channel.html" class="channel-img">
+                              <img src="search-images/channel logo/2.jpg" alt="" width="30" class="rounded-circle ml-3 bg-primary text-white">
+                              <span class="card-text bg-primary text-white">Travel </span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <!--الفديو الثالث-->
+            <div class="row">
+              <div class="col-12 my-3">
+                  <div class="card">
+                      <div class="card-horizontal d-md-flex d-block">
+                          <div class="card-icons">
+                              <a href="watch.html">
+                                  <img class="img-square-wrapper search-image-size" src="search-images/3.jpg" height="170" alt="Card image cap">
+                                  <div>
+                                  <time>11:00</time>
+                                  <i class="fas fa-play fa-2x"></i>
+                                </div>
+                              </a>
+                          </div>
+                          <div class="card-body p-2 bg-primary text-white">
+                              <a href="watch.html"><h4 class="bg-primary text-white">اهم المعالم الاثريه في مصر  </h4></a>
+                              <p class="card-text">يوجد معالم اثريه كثيرة جدا في مصر واروع العجائب ايضا واليكم في هذا الفديو معالم مهمه جدا بالنسبه للتراث المصري</p>
+                              <small class="text-muted">
+                              <i class="fas fa-film bg-primary text-white"></i> <span class="bg-primary text-white">4 مليون مشاهدة</span>
+                              <i class="fas fa-clock bg-primary text-white"></i> <span class="bg-primary text-white">قبل 3 سنين</span>
+                              </small>
+                              <a href="channel.html" class="channel-img">
+                              <img src="search-images/channel logo/3.jpg" alt="" width="30" class="rounded-circle ml-3 bg-primary text-white">
+                              <span class="card-text bg-primary text-white">Culture club </span>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+</div>
+
+
+
+
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+.card:hover {
+    transform: translateY(0%);
+}
+
+.watch-page .watch-icons {
+    position: absolute; /* لكي تظهر الايقونات بالاسفل */
+    bottom: 5px;
+    right: 20px;
+}
+
+.watch-page i:hover {
+    cursor: pointer;
+}
+
+/* لعرض المزيد من شرح الفديو */
+.watch-page #more {
+    display: none;
+}
+
+/* زر ابلاغ */
+.report {
+    cursor: pointer;
+}
+
+/* اخفاء الظل على خانة ادخال التعليقات */
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* اخفاء الردود عند تحميل الصفحة */
+.card-inner {
+    display: none;
+}
+
+
+/* الوقت على الفديوهات المقترحة وايقونة التشغيل*/
+time{
+    left: 20px;
+    font-size: 15px;
+}
+
+.watch-page .fa-play {
+   right: 46% !important;
+}
+
+@media (min-width: 992px) {
+    time{
+        left: 20px;
+        font-size: 13px;
+    }
+    
+    .watch-page .fa-play {
+      font-size: 20px !important;
+    }
+}
+
+@media (max-width: 570px) {
+    .reply-time {
+    font-size: 11px;
+    }
+}

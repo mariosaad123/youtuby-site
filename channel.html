@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوتيوبيا | قناة Gaming Time</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/channel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="mt-5 rtl">
+  <div class="layer"></div>
+    <!-- القائمه العلويه-->
+  <div id="top-menu">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
+          <i class="fa-solid fa-bars fa-lg text-white" id="toggler"></i>
+          <b>    
+              <a class="navbar-brand " href="index.html">
+                  يوتيوبيا
+                  <span class="website-logo p-1"><i class="fas fa-play-circle"></i></span>
+              </a>
+            </b>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto">
+                  <li class="nav-item">
+                      <a class="nav-link px-3 ml-1 mr-3" href="index.html">الصفحه الرئيسية</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link px-3 ml-1 mr-3" href="#">المرفوعة حديثًا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 mr-3" href="#">الفديوهات الرائجة</a>
+                  </li>
+              </ul>
+              <!-- البحث-->
+              <div class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search">
+                  <button onclick="location.href='search.html';" class="btn btn-outline-light my-2 my-sm-0 mr-3" type="submit">ابحث</button>
+              </div>
+          </div>
+          <i class="fa fa-search mr-4 search-icon" ></i>
+          <a href="#" class="nav-link login btn btn-outline-light d-inline-block" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+      </nav>
+       <input type="search" class="form-control search-input" placeholder="ابحث هنا......">
+      
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                      <button type="button" class="close" data-dismiss="modal">
+                          <span>&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                            <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+                            <input type="email" class="form-control" id="email">
+                          </div>
+                          <div class="form-group">
+                              <label for="password" class="col-form-label">كلمة المرور:</label>
+                              <input type="password" class="form-control" id="password">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="#">نسيت كلمة المرور</a>
+                      <a href="#" class="mx-auto">إنشاء حساب</a>
+                      <button type="button" class="btn btn-primary">دخول</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- القائمة الجانبية-->
+      <div class="row pt-1">
+        <div id="wrap">
+          <div class="sidebar">
+            <ul class="list-group list-group-flush p-4">
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-home mr-2 mouse-on"></i>الصفحة الرئيسية
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-fire mr-2 mouse-on"></i>الفديوهات الرائجة
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-circle-play mr-2 mouse-on"></i>فديوهاتي
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-certificate mr-2 mouse-on"></i>سجل المشاهدة
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-share-from-square mr-2 mouse-on"></i>الاشتراكات
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-film mr-2 mouse-on"></i>الافلام والعروض
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-gamepad mr-2 mouse-on"></i>العاب الفديو
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-shirt mr-2 mouse-on"></i>الموضة والجمال
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-atom mr-2 mouse-on"></i>محتوى تعليمي
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-gear mr-2 mouse-on"></i>الاعدادات
+              </a>
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-circle-question mr-2 mouse-on"></i>مساعدة
+              </a>
+              <a href=""></a>
+              مطور بواسطة ماريو سعد<br>
+              &copy;2024
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+                    </div>
+
+                    <!-- صورة بانر القناة والمكتوب عليها-->
+ <div class="channel-page">
+    <div class="container-fluid">
+     <div class="row">
+        <div class="banner position-relative">
+            <img class="img-fluid" src="channel banner/1.png" alt="channel panner">
+            <div class="social-media position-absolute bg-primary text-white p-1">
+            <a href="#" title="Gaming Time" class="mr-1">
+                <img src="channel banner/logo/1.jpg" alt="Gaming Time" width="25" class="rounded-circle ml-3 bg-primary text-white" title="صفحة الويب">
+                <span class=" bg-primary text-white">Gaming Time</span>
+            </a>
+            <a href="" title="تابعنا على تويتر" class="mr-1">
+                <img src="channel banner/icons/twitter.png" alt="Gaming Time">
+            </a>
+            <a href="" title="تابعنا على فيسبوك">
+                <img src="channel banner/icons/facebook.png" alt="Gaming Time">
+            </a>
+        </div>
+        <div class="follow position-absolute">
+          <button class="btn btn-info">مشترك 10538</button>
+        </div>
+        </div>
+     </div>
+
+     <!-- قائمة الاختيارات الاخرى-->
+     <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 mx-auto w-75 p-3 px-0">         
+                  <ul class="navbar-nav mx-md-auto d-block pl-0">
+                      <li class="nav-item first-list-element">
+                          <a class="nav-link p-2" href="#">الصفحه الرئيسية</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link p-2" href="#">فديوهاتي</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link p-2" href="#">قوائم التشغيل</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link p-2" href="#">القنوات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="#">مناقشه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2" href="#">حول</a>
+                    </li>
+                  </ul>
+          </nav>
+     </div>
+
+     <!-- الفديو التعريفي للقناة-->
+        <div class="vider-section bg-primary p-2 mt-3">
+            <div class="card border-top-0">
+                <div class="row">
+                  <div class="col-md-6">
+                    <video src="channel banner/video/1.mp4" controls poster="https://www.gtavice.net/content/images/gallery/gta-vi-logo-3840x2160.jpg" loop class="w-100">
+                        <track kind="captions" src="khamsat.vtt" srclang="ar" label="عربي" default>
+                    </video>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-block">
+                        <a href="watch.html"><h3 class="mt-2">فديو تعريفي للعبة GTA 6</h3></a>
+                      <p class="mt-3 mr-3">لعبة GTA 6 هى لعبة فديو مقدمة من شركة روك ستار الغنية عن التعريف والمتوقع صدورها في اواخر عامل 2024 واليكم الفديو المفدم لها</p>
+                      <small class="text-muted">
+                        <i class="fas fa-film"></i> <span>10 مليون مشاهدة</span>
+                        <i class="fas fa-clock"></i> <span>قبل 9 أشهر</span>
+                        </small>
+                        <a href="channel.html" class="channel-img">
+                        <img src="channel banner/logo/1.jpg" alt="" width="30" class="rounded-circle ml-3">
+                        <span class="card-text">Gaming Time </span>
+                        </a>
+                    </div>
+                  </div>
+           
+                </div>
+              </div>
+        </div>
+
+        <!-- باقي فديوهات القناة-->
+        <div class="latest-download">
+           <div class="contanier">
+            <h4 class="my-5 mx-3">فديوهات اخرى للقناة</h4>
+            <div class="row">
+    
+       <!-- card 1 -->
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card mb-4 p-1">
+                    <div class="card-icons">
+                      <a href="watch.html">
+                          <img src="images/channel-video-images/1.jpg" class="card-img-top" alt="video image">
+                          <time>15:44</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                      <div class="card-body">
+                        <h5 class="card-title">جيم فورت نايت حماس </h5>
+                      </div>
+                    </a>
+                      <div class="card-footer">
+                          <small class="text-primary">
+                              <span class="d-block"><i class="fa-solid fa-film"></i><span> 3 آلاف مشاهده</span></span>
+                              <i class="fa-solid fa-clock"></i><span> منذ شهرين</span>
+                          </small>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                          <img src="channel banner/logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+                          <span class="card-text">Gaming Time</span>
+                        </a>
+                      </div>
+              </div>
+    
+    <!-- card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card mb-4 p-1">
+        <div class="card-icons">
+          <a href="watch.html">
+              <img src="images/channel-video-images/2.jpg" class="card-img-top" alt="video image">
+              <time>18:32</time>
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+          <a href="watch.html">
+          <div class="card-body">
+            <h5 class="card-title">لعبة في غاية الروعه</h5>
+          </div>
+        </a>
+
+          <div class="card-footer">
+              <small class="text-primary">
+                 <span class="d-block"><i class="fa-solid fa-film"></i><span> 10 الاف مشاهده</span></span>
+                  <i class="fa-solid fa-clock"></i><span> منذ  3 شهر</span>
+              </small>
+            </div>
+            <a href="channel.html" class="channel-img">
+              <img src="channel banner/logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3 mb-3" width="30px">
+              <span class="card-text">Gaming Time</span>
+            </a>
+          </div>
+    </div>
+    
+    <!-- card 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card mb-4 p-1">
+        <div class="card-icons">
+          <a href="watch.html">
+              <img src="images/channel-video-images/3.png" class="card-img-top" alt="video image">
+              <time>20:53</time>
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+          <a href="watch.html">
+          <div class="card-body">
+            <h5 class="card-title">لعبت فيفا اون لاين</h5>
+          </a>
+          
+        </div>
+          <div class="card-footer">
+              <small class="text-primary">
+                 <span class="d-block"><i class="fa-solid fa-film"></i><span> 200 الف مشاهده</span></span>
+                  <i class="fa-solid fa-clock"></i><span> منذ  5 اشهر</span>
+              </small>
+            </div>
+            <a href="channel.html" class="channel-img">
+              <img src="channel banner/logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+              <span class="card-text">Gaming Time</span>
+            </a>
+          </div>
+    </div>
+    
+    <!-- card 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card mb-4 p-1">
+        <div class="card-icons">
+          <a href="watch.html">
+              <img src="images/channel-video-images/4.jpeg" class="card-img-top" alt="video image">
+              <time>14:09</time>
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+          <a href="watch.html">
+          <div class="card-body">
+            <h5 class="card-title">عودة للعبة medal of honor الممتعه</h5>
+          </div>
+        </a>
+    
+          <div class="card-footer">
+              <small class="text-primary">
+                  <span class="d-block"><i class="fa-solid fa-film"></i><span> 500 آلاف مشاهده</span></span>
+                  <i class="fa-solid fa-clock"></i><span> منذ 7 اشهر</span>
+              </small>
+            </div>
+            <a href="channel.html" class="channel-img">
+              <img src="channel banner/logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+              <span class="card-text">Gaming Time</span>
+            </a>
+          </div>
+    </div>
+    
+    <!-- card 5 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card mb-4 p-1">
+        <div class="card-icons">
+          <a href="watch.html">
+              <img src="images/channel-video-images/5.jpeg" class="card-img-top" alt="video image">
+              <time>12:09</time>
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+          <a href="watch.html">
+          <div class="card-body">
+            <h5 class="card-title">call of duty هى كل المتعه</h5>
+          </div>
+        </a>
+    
+          <div class="card-footer">
+              <small class="text-primary">
+                  <span class="d-block"><i class="fa-solid fa-film"></i><span> 2 مليون مشاهده</span></span>
+                  <i class="fa-solid fa-clock"></i><span> منذ سنه</span>
+              </small>
+            </div>
+            <a href="channel.html" class="channel-img">
+              <img src="channel banner/logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+              <span class="card-text">Gaming Time</span>
+            </a>
+          </div>
+    </div>
+    
+    <!-- card 6 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card mb-4 p-1">
+        <div class="card-icons">
+          <a href="watch.html">
+              <img src="images/channel-video-images/6.jpeg" class="card-img-top" alt="video image">
+              <time>10:00</time>
+              <i class="fas fa-play fa-2x"></i>
+            </a>
+          </div>
+            <a href="watch.html">
+          <div class="card-body">
+            <h5 class="card-title">لعبة الزمن الجميل سوبر ماريو</h5>
+          </div>
+        </a>
+    
+          <div class="card-footer">
+              <small class="text-primary">
+                  <span class="d-block"><i class="fa-solid fa-film"></i><span> 950 آلاف مشاهده</span></span>
+                  <i class="fa-solid fa-clock"></i><span> منذ 10 اشهر</span>
+              </small>
+            </div>
+            <a href="channel.html" class="channel-img">
+              <img src="channel banner/logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+              <span class="card-text">Gaming Time</span>
+            </a>
+          </div>
+    </div>
+        </div>
+     </div>
+           </div>
+        </div>
+     </div>
+
+
+
+     <script src="js/jquery-3.7.1.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/index.js"></script>
+      </body>
+      </html>      

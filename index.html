@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوتيوبيا</title>
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="mt-5 rtl">
+  <div class="layer"></div>
+  <div id="top-menu">
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
+              <i class="fa-solid fa-bars fa-lg text-white" id="toggler"></i>
+              <b>    
+                  <a class="navbar-brand " href="index.html">
+                      يوتيوبيا
+                      <span class="website-logo p-1"><i class="fas fa-play-circle"></i></span>
+                  </a>
+                </b>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-lg-auto">
+                      <li class="nav-item first-list-element">
+                          <a class="nav-link px-3 ml-1 mr-3" href="index.html">الصفحه الرئيسية</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link px-3 ml-1 mr-3" href="#">المرفوعة حديثًا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-3 mr-3" href="#">الفديوهات الرائجة</a>
+                      </li>
+                  </ul>
+                  <!-- البحث-->
+                  <div class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2 form-hide" type="search">
+                      <button onclick="location.href='search.html';" class="form-hide btn btn-outline-light my-2 my-sm-0 mr-3" type="submit">ابحث</button>
+                  </div>
+              </div>
+              <i class="fa fa-search mr-4 search-icon" ></i>
+              <a href="#" class="nav-link login btn btn-outline-light d-inline-block" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+          </nav>
+           <input type="search" class="form-control search-input" placeholder="ابحث هنا......">
+          
+          <!-- Modal -->
+          <div class="modal fade" id="loginModal">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                          <button type="button" class="close" data-dismiss="modal">
+                              <span>&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="form-group">
+                                <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+                                <input type="email" class="form-control" id="email">
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="col-form-label">كلمة المرور:</label>
+                                  <input type="password" class="form-control" id="password">
+                              </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="#">نسيت كلمة المرور</a>
+                          <a href="#" class="mx-auto">إنشاء حساب</a>
+                          <button type="button" class="btn btn-primary">دخول</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- القائمة الجانبية-->
+          <div class="row pt-1">
+            <div id="wrap">
+              <div class="sidebar">
+                <ul class="list-group list-group-flush p-4">
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-home mr-2 mouse-on"></i>الصفحة الرئيسية
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-fire mr-2 mouse-on"></i>الفديوهات الرائجة
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-circle-play mr-2 mouse-on"></i>فديوهاتي
+                  </a>
+                  <a href="log.html" class="list-group-item list-group-item-action">
+                    <i class="fa fa-certificate mr-2 mouse-on"></i>سجل المشاهدة
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-share-from-square mr-2 mouse-on"></i>الاشتراكات
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-film mr-2 mouse-on"></i>الافلام والعروض
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-gamepad mr-2 mouse-on"></i>العاب الفديو
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-shirt mr-2 mouse-on"></i>الموضة والجمال
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-atom mr-2 mouse-on"></i>محتوى تعليمي
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-gear mr-2 mouse-on"></i>الاعدادات
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-circle-question mr-2 mouse-on"></i>مساعدة
+                  </a>
+                  <a href=""></a>
+                  مطور بواسطة ماريو سعد<br>
+                  &copy;2024
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- جسم الصفحه-->
+<div class="row">
+      <div class="content m-4">
+         <h4 class="my-5 mx-3">الفيديوهات المقترحه</h4>
+          <div class="row">
+
+     <!-- card 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <div class="card-icons">
+                    <a href="watch.html">
+                      <img src="images/1.jpg" class="card-img-top" alt="video image">
+                      <time>05:00</time>
+                      <i class="fas fa-play fa-2x"></i>
+                    </a>
+                  </div>
+                    <a href="watch.html">
+                    <div class="card-body">
+                      <h5 class="card-title">معلومات عن الثعالب</h5>
+                    </div>
+                    </a>
+
+                    <div class="card-footer">
+                        <small class="text-primary">
+                            <span class="d-block"><i class="fa-solid fa-film"></i><span> 3 الاف مشاهده</span></span>
+                            <i class="fa-solid fa-clock"></i><span> منذ 10 اشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-img">
+                        <img src="channel-logo/1.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+                        <span class="card-text">COYOTE</span>
+                      </a>
+                    </div>
+            </div>
+
+<!-- card 2 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/2.jpg" class="card-img-top" alt="video image">
+          <time>11:40</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">حياةالسلحفاء</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 10 الاف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ  11 شهر</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/2.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3 mb-3" width="30px">
+            <span class="card-text">Company Name</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 3 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/3.jpg" class="card-img-top" alt="video image">
+          <time>10:56</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">حيوانات نادرة</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 3 مليون مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ  سنتين</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/3.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Perfect Animals</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 4 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/4.jpg" class="card-img-top" alt="video image">
+          <time>03:20</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">لماذا يلقب الأسد بملك الغابه</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 500 الف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 4 اشهر</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/4.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Animal is King</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 5 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/5.jpg" class="card-img-top" alt="video image">
+          <time>15:23</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">حقائق عن المريخ</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 2 مليون مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ سنتين</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/5.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">علوم الكواكب</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 6 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/6.jpg" class="card-img-top" alt="video image">
+          <time>04:00</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">ما هو الفضاء ؟</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 950 الف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 10 اشهر</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/6.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Galaxy</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 7 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/7.jpg" class="card-img-top" alt="video image">
+          <time>05:50</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">عملية الكسوف</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 3 الاف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 5 اشهر</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/3.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Space</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 8 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/8.jpg" class="card-img-top" alt="video image">
+          <time>09:43</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">معلومات مهمه عن الأرض</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> مليون مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 4 سنين</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/8.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Magical</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 9 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/9.jpg" class="card-img-top" alt="video image">
+          <time>11:20</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">ما هو الكمبيوتر ؟</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 550 الف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ سنه</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/9.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Computer</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 10 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+                          <!--10 here is webp not jpg-->
+          <img src="images/10.webp" class="card-img-top" alt="video image">
+          <time>20:25</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">ما استخدامات لغة بايثون</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 3 مليون مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 4 سنين</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+                                <!--10 is png not jpg-->
+            <img src="channel-logo/10.png" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Software</span>
+          </a>
+        </div>
+</div>
+
+<!-- card 11 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/11.jpg" class="card-img-top" alt="video image">
+          <time>30:55</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">اساسيات الاختراق الاخلاقي</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 500 الف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 6 اشهر</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/11.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Cyper Security</span>
+          </a>
+        </div>
+</div>
+<!-- card 12 -->
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card mb-4 p-1">
+      <div class="card-icons">
+        <a href="watch.html">
+          <img src="images/12.jpg" class="card-img-top" alt="video image">
+          <time>01:40:55</time>
+          <i class="fas fa-play fa-2x"></i>
+        </a>
+      </div>
+        <a href="watch.html">
+        <div class="card-body">
+          <h5 class="card-title">تعلم تحليل البيانات</h5>
+        </div>
+        </a>
+
+        <div class="card-footer">
+            <small class="text-primary">
+                <span class="d-block"><i class="fa-solid fa-film"></i><span> 600 الف مشاهده</span></span>
+                <i class="fa-solid fa-clock"></i><span> منذ 9 اشهر</span>
+            </small>
+          </div>
+          <a href="channel.html" class="channel-img">
+            <img src="channel-logo/12.jpg" alt="channel-logo" class="rounded-circle my-2 ml-3" width="30px">
+            <span class="card-text">Data TACK</span>
+          </a>
+        </div>
+</div>
+
+          </div>
+      </div>
+    </div>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
+
